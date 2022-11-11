@@ -27,12 +27,12 @@ This user guide is designed to provide documentation on the usage of the data pi
 
 <div markdown="block" class="alert alert-info">
 
-<strong>ℹ️ Notes about the data pipeline:</strong>
+**information_source: Notes about the data pipeline:**<br>
 
-<li>This section provides documentation on the data that are to be rendered on the dashboard.</li> 
-<li>To understand and use the data pipeline, basic familiarity with <code>Python</code> and <em>Machine Learning (ML)</em> are <strong>highly recommended</strong>.</li> 
-<li>For first time users, kindly ensure that you have the relevant packages installed before executing the code.</li> 
-<li>The files mentioned in the following sections <strong>must</strong> be a <em>csv</em> file and the naming must strictly adhere to the header of the section.</li> 
+* This section provides documentation on the data that are to be rendered on the dashboard.
+* To understand and use the data pipeline, basic familiarity with `Python` and _Machine Learning (ML)_ are **highly recommended**.
+* For first time users, kindly ensure that you have the relevant packages installed before executing the code.
+* The files mentioned in the following sections **must** be a _csv_ file and the naming must strictly adhere to the header of the section.
 
 </div>
 
@@ -68,11 +68,11 @@ This file contains the data, that is the answers to the question in order to tra
 
 <div markdown="block" class="alert alert-danger">
 
-<strong>❗ Notes about the training set:</strong>
+**:exclamation: Notes about the training set:**<br>
 
-<li>If the <em>file name</em> or the <em>column name</em> differs from above, this will not allow you to execute the data pipeline script!</li> 
-<li>If you want to introduce more training data into <code>Labelled_Answers.csv </code>, manual labelling has to be done for these data.</li>
-<li>Once you have trained a ML model, you do not need to train it again unless there are changes to the training set.</li>
+* If the _file name_ or the _column name_ differs from above, this will not allow you to execute the data pipeline script!
+* If you want to introduce more training data into `Labelled_Answers.csv`, manual labelling has to be done for these data.
+* Once you have trained an ML model, you do not need to train it again unless there are changes to the training set.
 
 </div>
 
@@ -96,11 +96,11 @@ This file contains the details to the list of company of interest. Columns inclu
 
 ### 2.3. Execute the data pipeline script
 
-Place the above mentioned files in the same directory as the data pipeline script named `Final_Pipeline.ipynb` and kindly excute `Final_Pipeline.ipynb`. The output of the execution is a _csv_ file titled `Consolidated_Output.csv` which has to be **uploaded** onto Dataiku to _pipeline_ it into the dashboard.
+Place the above-mentioned files in the same directory as the data pipeline script named `Final_Pipeline.ipynb` and kindly execute `Final_Pipeline.ipynb`. The output of the execution is a _csv_ file titled `Consolidated_Output.csv` which has to be **uploaded** onto Dataiku to _pipeline_ it into the dashboard.
 
 #### 2.3.1. Consolidated_Output.csv
 
-The output file `Consolidated_Output.csv` It comprises of the data in the training dataset and the ML results of the new URLs.
+The output file `Consolidated_Output.csv` It comprises the data in the training dataset and the ML results of the new URLs.
 
 ![pipeline4.png](images/pipeline4.png)
 
@@ -137,10 +137,10 @@ The following questions do not require using the `Labelled_Answers.csv` in the t
 
 <div markdown="block" class="alert alert-info">
 
-<strong>ℹ️ Notes about the dashboard:</strong>
+**:information_source: Notes about the dashboard**<br>
 
-<li>The default definition of <code>peer</code> in this dashboard refers to <strong>all the companies</strong> that have released their Sustainability Report in the <strong>current year</strong>. <br> For example, if <code>Year</code> selected is <code>2021</code>, peer refers to all the companies that have released their Sustanability Report in <code>2021</code>.</li> 
-<li>The term <em>company</em> and <em>client</em> are used synonymously.</li> 
+* The default definition of `peer` in this dashboard refers to **all the companies** that have released their Sustainability Report in the **current year**. <br> For example, if `Year` selected is `2021`, peer refers to all the companies that have released their Sustainability Report in `2021`. 
+* The term _company_ and _client_ are used synonymously.
 
 </div>
 
@@ -160,12 +160,12 @@ The `year` dropdown allows user to filter for the sustainability performance of 
 
 <div markdown="block" class="alert alert-info">
 
-<strong>ℹ️ Notes about the following dropdown</strong>
+**:information_source: Notes about the following dropdown**<br>
 
-<li> These dropwdowns are <strong>optional</strong> dropdowns.</li>
-<li> These dropdowns are meant to change the definition of <code>peer</code>. For example, if a <code>Sector</code> is selected, <code>peer</code> will be defined as those companies in sector <code>Sector</code> that have released their sustainability report in year <code>Year</code>.</li>
-<li> The intended effect of these dropdowns will be <em>cumulative</em>. For example, if <code>Sector</code> and <code>Country</code> dropdowns are selected, <code>peer</code> will be defined as those companies in sector <code>Sector</code> and country <code>Country</code> that have released their sustainability report in year <code>Year</code>.</li>
-<li>If <code>Sub-Sector</code> is selected, the option chosen in <code>Sector</code> will be ignored.</li>
+* These dropwdowns are **optional** dropdowns.
+* These dropdowns are meant to change the definition of `peer`. For example, if a `Sector` is selected, `peer` will be defined as those companies in sector `Sector` that have released their sustainability report in year `Year`.
+* The intended effect of these dropdowns will be _accumulative_. For example, if `Sector` and `Country` dropdowns are selected, `peer` will be defined as those companies in sector `Sector` and country `Country` that have released their sustainability report in year `Year`.
+* If `Sub-Sector` is selected, the option chosen in `Sector` will be ignored.
 
 </div>
 
@@ -173,13 +173,13 @@ The `year` dropdown allows user to filter for the sustainability performance of 
 This feature allows filtering to compare against peers in the specified `Sector`.
 
 #### 3.1.4. Sub-Sector
-This feature allows filtering to compare against peers in the specified `Sub-Sector`. Please take note of the side-effects as mentioned above.
+This feature allows filtering to compare against peers in the specified `Sub-Sector`. Please take note of the side effects as mentioned above.
 
 #### 3.1.5. Country
 This feature allows filtering to compare against peers in the specified `Country`.
 
 #### 3.1.6. Comparison
-This feature allows side by side comparison of the sustainabiltiy performance of 2 different companies.
+This feature allows side by side comparison of the sustainability performance of 2 different companies.
 
 ### 3.2. Company Details
 
@@ -230,7 +230,7 @@ Same as [here](#332-binary-questions).
 
 ### 3.5 Transition Plans
 
-This appears as a modal (i.e pop-out) to the user. This page contains information to the overall transition plan score and ranking amongst peer. Apart from binary questions, it also contains a [scale question](#3-5-1-scale-question-1). The following is the list of questions that are answered in this page.
+This appears as a modal (i.e pop-out) to the user. This page contains information to the overall transition plan score and ranking amongst peer. Apart from binary questions, it also contains a [scale question](#351-scale-question). The following is the list of questions that are answered in this page.
 
 * Question 8. Do you have a low carbon transition plan?
 * Question 9. Do you provide incentives to your senior leadership team for the management of climate related issues?
@@ -256,10 +256,10 @@ Each `Yes` is awarded 1 point. For the scale question, `Established Carbon Trans
 
 <div>
 
-<strong>❗ Notes about the Transition Plans:</strong>
+**:exclamation:Notes about the Transition Plans:**
 
-<li>The percentile calculated is based on the ranking of the score calculated.</li> 
-<li>While peer's performance value can change when any of the optional dropdown is selected, the <strong>percentile</strong> will always remain the same.</li>
+* The percentile calculated is based on the ranking of the score calculated.
+* While peer's performance value can change when any of the optional dropdown is selected, the **percentile** will always remain the same.
 
 </div>
 
