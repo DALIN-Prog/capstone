@@ -1,5 +1,6 @@
 ---
-User Guide
+layout: page
+title: User Guide
 ---
 
 Welcome to NatWest Decarbonisation Dashboard user guide! This is a read only dashboard, which means there will be no _create_, _update_ or _delete_ functionality.
