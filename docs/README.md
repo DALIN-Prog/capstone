@@ -27,7 +27,7 @@ This user guide is designed to provide documentation on the usage of the data pi
 
 <div markdown="block" class="alert alert-info">
 
-**information_source: Notes about the data pipeline:**<br>
+**ℹ️ Notes about the data pipeline:**<br>
 
 * This section provides documentation on the data that are to be rendered on the dashboard.
 * To understand and use the data pipeline, basic familiarity with `Python` and _Machine Learning (ML)_ are **highly recommended**.
@@ -68,7 +68,7 @@ This file contains the data, that is the answers to the question in order to tra
 
 <div markdown="block" class="alert alert-danger">
 
-**:exclamation: Notes about the training set:**<br>
+**❗ Notes about the training set:**<br>
 
 * If the _file name_ or the _column name_ differs from above, this will not allow you to execute the data pipeline script!
 * If you want to introduce more training data into `Labelled_Answers.csv`, manual labelling has to be done for these data.
@@ -137,7 +137,7 @@ The following questions do not require using the `Labelled_Answers.csv` in the t
 
 <div markdown="block" class="alert alert-info">
 
-**:information_source: Notes about the dashboard**<br>
+**ℹ️ Notes about the dashboard:**<br>
 
 * The default definition of `peer` in this dashboard refers to **all the companies** that have released their Sustainability Report in the **current year**. <br> For example, if `Year` selected is `2021`, peer refers to all the companies that have released their Sustainability Report in `2021`. 
 * The term _company_ and _client_ are used synonymously.
@@ -160,7 +160,7 @@ The `year` dropdown allows user to filter for the sustainability performance of 
 
 <div markdown="block" class="alert alert-info">
 
-**:information_source: Notes about the following dropdown**<br>
+**ℹ️ Notes about the following dropdown:**<br>
 
 * These dropwdowns are **optional** dropdowns.
 * These dropdowns are meant to change the definition of `peer`. For example, if a `Sector` is selected, `peer` will be defined as those companies in sector `Sector` that have released their sustainability report in year `Year`.
@@ -256,7 +256,7 @@ Each `Yes` is awarded 1 point. For the scale question, `Established Carbon Trans
 
 <div>
 
-**:exclamation:Notes about the Transition Plans:**
+**❗Notes about the Transition Plans:** <br>
 
 * The percentile calculated is based on the ranking of the score calculated.
 * While peer's performance value can change when any of the optional dropdown is selected, the **percentile** will always remain the same.
