@@ -254,7 +254,7 @@ Same as [here](#332-binary-questions).
 
 Each `Yes` is awarded 1 point. For the scale question, `Established Carbon Transition Plan` is awarded 1 point, `Plans to Transtion to Low Carbon Environment` is awarded 0.5 point. 0 point otherwise.
 
-<div>
+<div markdown="block" class="alert alert-danger">
 
 **❗Notes about the Transition Plans:** <br>
 
@@ -262,6 +262,7 @@ Each `Yes` is awarded 1 point. For the scale question, `Established Carbon Trans
 * While peer's performance value can change when any of the optional dropdown is selected, the **percentile** will always remain the same.
 
 </div>
+
 
 ### 3.6. Comparison
 
